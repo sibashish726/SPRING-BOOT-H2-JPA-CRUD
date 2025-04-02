@@ -50,6 +50,11 @@ public class UserService {
      }
  }
  
+ public String deteleUserById(int id) {
+	 userRepository.deleteById(id);
+	 return "User deleted";
+ }
+ 
  
  
 }
